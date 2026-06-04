@@ -48,23 +48,23 @@ def render_dashboard(data):
 
     st.subheader("Transaction Status Distribution")
     fig1 = TransactionStatusDistribution(filtered_df)
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig1, width=True)
 
     st.subheader("Transaction Amount Distribution")
     fig2 = TransactionAmountDistribution(filtered_df)
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width=True)
 
     st.subheader("Transaction Type Distribution")
     fig3 = TransactionTypeDistribution(filtered_df)
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, width =True)
 
     st.subheader("Transaction Summary by Type")
     fig4 = TransactionSummary(filtered_df)
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, width =True)
 
     st.subheader("Daily Transaction Trend")
     fig5 = DailyTransactionTrend(filtered_df)
-    st.plotly_chart(fig5, use_container_width=True)
+    st.plotly_chart(fig5, width =True)
 
     st.subheader("Transaction Data Table")
     search_term = st.text_input("Search by Transaction ID", key="search_term")
@@ -76,7 +76,7 @@ def render_dashboard(data):
 
 def render_overview(data):
     st.title("Transactions Overview")
-    st.markdown("Use this page to inspect raw transaction data and summary metrics.")
+    st.markdown("Raw transaction data and summary metrics.")
 
     filtered_df = filter_transactions(data)
     if filtered_df.empty:
