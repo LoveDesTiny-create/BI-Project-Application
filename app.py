@@ -54,9 +54,7 @@ def render_dashboard(data):
     fig2 = TransactionAmountDistribution(filtered_df)
     st.plotly_chart(fig2, width='stretch')
 
-    st.subheader("Transaction Type Distribution")
-    fig3 = TransactionTypeDistribution(filtered_df)
-    st.plotly_chart(fig3, width ='stretch')
+    
 
     st.subheader("Transaction Summary by Type")
     fig4 = TransactionSummary(filtered_df)
