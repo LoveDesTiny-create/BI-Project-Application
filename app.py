@@ -98,6 +98,12 @@ def render_overview(data):
     st.markdown("### Raw Transaction Data")
     st.dataframe(filtered_df)
 
+    st.subheader("Business Insights")
+    st.write(
+        "Use the filters and charts to identify failure patterns, "
+        "fraud effectiveness, network slice performance, and device performance."
+    )
+
 
 if page == "Dashboard":
     render_dashboard(df)
