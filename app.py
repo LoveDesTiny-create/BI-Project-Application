@@ -48,23 +48,23 @@ def render_dashboard(data):
 
     st.subheader("Transaction Status Distribution")
     fig1 = TransactionStatusDistribution(filtered_df)
-    st.plotly_chart(fig1, width=True)
+    st.plotly_chart(fig1, width='stretch')
 
     st.subheader("Transaction Amount Distribution")
     fig2 = TransactionAmountDistribution(filtered_df)
-    st.plotly_chart(fig2, width=True)
+    st.plotly_chart(fig2, width='stretch')
 
     st.subheader("Transaction Type Distribution")
     fig3 = TransactionTypeDistribution(filtered_df)
-    st.plotly_chart(fig3, width =True)
+    st.plotly_chart(fig3, width ='stretch')
 
     st.subheader("Transaction Summary by Type")
     fig4 = TransactionSummary(filtered_df)
-    st.plotly_chart(fig4, width =True)
+    st.plotly_chart(fig4, width ='stretch')
 
     st.subheader("Daily Transaction Trend")
     fig5 = DailyTransactionTrend(filtered_df)
-    st.plotly_chart(fig5, width =True)
+    st.plotly_chart(fig5, width ='stretch')
 
     st.subheader("Transaction Data Table")
     search_term = st.text_input("Search by Transaction ID", key="search_term")
