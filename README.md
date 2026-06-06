@@ -93,20 +93,6 @@ BI_PROJECT/
   ├── python
   └── requirements.txt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## How to Run the Project
